@@ -157,7 +157,8 @@ def main(argv):
     if torch.cuda.is_available():
         torch.cuda.manual_seed(seed)
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = 'cpu'
     logger.info(f'Device: {device}')
 
     if torch.cuda.is_available():
